@@ -1,0 +1,141 @@
+/***** Custom Properties *****/
+:root{
+    --bg-color:rgba(66, 66, 66, 0.938);
+}
+
+/***** Reset Styles *****/
+  
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background: rgb(15,121,9);
+    background: linear-gradient(90deg, rgba(15,121,9,1) 17%, rgba(255,196,0,1) 98%);
+}  
+  
+/***** My Styles *****/
+
+.btn-style{
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(255, 84, 4);
+    color: rgba(255,196,0,1);
+    font-size: 1rem;
+}
+
+.btn-style:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.buttons{
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer{
+    text-align: center;
+    color: rgba(255,196,0,1);
+    border-top: 2px solid rgb(224, 147, 45);
+}
+
+.header{
+    text-align: center;
+}
+
+.header-tittle{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(255,196,0,1);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(224, 147, 45);
+    margin-top: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.square1{
+    grid-area: square1;
+}
+
+.square2{
+    grid-area: square2;
+}
+
+.square3{
+    grid-area: square3;
+}
+
+.square4{
+    grid-area: square4;
+}
+
+.square5{
+    grid-area: square5;
+}
+
+.square6{
+    grid-area: square6;
+}
+
+.square7{
+    grid-area: square7;
+}
+
+.square8{
+    grid-area: square8;
+}
+
+.square9{
+    grid-area: square9;
+}
+
+.table{
+    width: 70vw;
+    height: 53vh;
+    display: grid;
+    align-content: center;
+    justify-content: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "square1 square2 square3"
+        "square4 square5 square6"
+        "square7 square8 square9"
+    ;
+}
+
+.table-item{
+    border: 2px solid rgb(255, 84, 4);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+
+/***** Medias queries *****/
